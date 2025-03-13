@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvre l'univers de DustyOnAir !">
+    <title>DustyOnAir - Infos & Communauté</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            text-align: center;
+        }
+
+        /* Navigation */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(10px);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.5);
+            transform: scale(1.1);
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h2 {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+        .highlight {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#about">À Propos</a>
+        <a href="#setup">Setup</a>
+        <a href="#stats">Stats</a>
+        <a href="#boutique">Boutique</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#communaute">Communauté</a>
+        <a href="index.html">Retour à l'accueil</a>
+    </nav>
+
+    <section id="about" class="highlight">
+        <h2>À Propos</h2>
+        <p>Salut, moi c'est DustyOnAir ! Passionné de gaming et streamer sur Twitch, j'aime partager mes parties et interagir avec ma communauté.</p>
+    </section>
+
+    <section id="setup" class="highlight">
+        <h2>Setup & Config</h2>
+        <p>PC Gamer: Ryzen 9, RTX 4080, 32Go RAM.<br> Matériel: Casque SteelSeries, Clavier mécanique, etc.</p>
+    </section>
+
+    <section id="stats" class="highlight">
+        <h2>Stats & Records</h2>
+        <p>Retrouve ici mes meilleures performances sur Warzone et d'autres jeux !</p>
+        <a href="https://wzstats.gg/fr" target="_blank">Voir mes stats Warzone</a>
+    </section>
+
+    <section id="boutique" class="highlight">
+        <h2>Boutique / Goodies</h2>
+        <p>Découvre mon merchandising exclusif et soutiens la chaîne !</p>
+    </section>
+
+    <section id="galerie" class="highlight">
+        <h2>Galerie / Best Of</h2>
+        <p>Les meilleurs moments de mes streams, clips et images fun !</p>
+    </section>
+
+    <section id="communaute" class="highlight">
+        <h2>Communauté & Partenariats</h2>
+        <p>Rejoins notre communauté sur Discord et découvre mes partenaires.</p>
+        <a href="https://discord.gg/7wCBb6U5" target="_blank">Rejoindre le Discord</a>
+    </section>
+</body>
+</html>
