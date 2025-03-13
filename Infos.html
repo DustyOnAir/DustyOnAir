@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Regarde DustyOnAir en direct sur Twitch !">
-    <title>DustyOnAir - Live Twitch</title>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <meta name="description" content="Découvre l'univers de DustyOnAir !">
+    <title>DustyOnAir - Infos & Communauté</title>
     <style>
         /* Styles généraux */
         body {
@@ -14,63 +13,21 @@
             padding: 0;
             background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
             color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            position: relative;
-        }
-
-        /* Conteneur des particules */
-        #particles-js {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-
-        /* Animation fade-in */
-        .fade-in {
-            opacity: 0;
-            animation: fadeIn 2s ease-in-out forwards;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        /* Effet néon sur le titre */
-        h1 {
-            font-size: 3.5em;
-            color: #f39c12;
-            text-transform: uppercase;
-            text-shadow: 0 0 10px #f39c12, 0 0 20px #e67e22, 0 0 30px #d35400;
             text-align: center;
         }
 
-        /* Amélioration du slogan */
-        p.slogan {
-            font-size: 1.3em;
-            color: #ffffff;
-            font-style: italic;
-            font-weight: bold;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-            text-align: center;
-            margin-top: -10px;
-        }
-
-        /* Boutons Réseaux Sociaux */
-        .social-buttons {
-            margin: 20px 0;
+        /* Navigation */
+        .navbar {
             display: flex;
             justify-content: center;
             gap: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(10px);
         }
-
-        .social-buttons a {
-            font-size: 1.2em;
+        .navbar a {
             color: white;
             text-decoration: none;
             padding: 10px 20px;
@@ -78,67 +35,69 @@
             border-radius: 5px;
             transition: background 0.3s, transform 0.3s;
         }
-
-        .social-buttons a:hover {
+        .navbar a:hover {
             background: rgba(255, 255, 255, 0.5);
             transform: scale(1.1);
         }
 
-        /* Conteneur Twitch */
-        .twitch-container {
-            display: flex;
-            width: 90%;
-            max-width: 1200px;
-            gap: 20px;
+        /* Sections */
+        section {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: auto;
         }
-
-        .twitch-player, .twitch-chat {
+        h2 {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+        .highlight {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-        }
-
-        .twitch-player {
-            flex: 3;
-            height: 500px;
-        }
-
-        .twitch-chat {
-            flex: 1;
-            height: 500px;
         }
     </style>
 </head>
 <body>
-    <div id="particles-js"></div>
-    <h1>DustyOnAir</h1>
-    <p class="slogan">"Plonge dans l'univers du gaming en direct !"</p>
+    <nav class="navbar">
+        <a href="#about">À Propos</a>
+        <a href="#setup">Setup</a>
+        <a href="#stats">Stats</a>
+        <a href="#boutique">Boutique</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#communaute">Communauté</a>
+        <a href="index.html">Retour à l'accueil</a>
+    </nav>
 
-    <div class="social-buttons">
-        <a href="https://discord.gg/7wCBb6U5" target="_blank">Discord</a>
-        <a href="https://www.youtube.com/@DustyOnAir8569" target="_blank">YouTube</a>
-        <a href="https://wzstats.gg/fr" target="_blank">Warzone Classes</a>
-        <a href="https://streamlabs.com/dustyonair/tip" target="_blank">Soutenir la Chaine</a>
-        <a href="mailto:Dusty.stream.gaming@gmail.com">Contacter Moi</a>
-        <a href="https://www.twitch.tv/DustyOnAir/schedule" target="_blank">Programme</a>
-        <a href="/DustyOnAir/infos.html" target="_self">Infos & Communauté</a>
-    </div>
+    <section id="about" class="highlight">
+        <h2>À Propos</h2>
+        <p>Salut, moi c'est DustyOnAir ! Passionné de gaming et streamer sur Twitch, j'aime partager mes parties et interagir avec ma communauté.</p>
+    </section>
 
-    <div class="twitch-container fade-in">
-        <iframe class="twitch-player" 
-            src="https://player.twitch.tv/?channel=DustyOnAir&parent=dustyonair.github.io" 
-            frameborder="0" 
-            allowfullscreen>
-        </iframe>
+    <section id="setup" class="highlight">
+        <h2>Setup & Config</h2>
+        <p>PC Gamer: Ryzen 9, RTX 4080, 32Go RAM.<br> Matériel: Casque SteelSeries, Clavier mécanique, etc.</p>
+    </section>
 
-        <iframe class="twitch-chat" 
-            src="https://www.twitch.tv/embed/DustyOnAir/chat?parent=dustyonair.github.io" 
-            frameborder="0">
-        </iframe>
-    </div>
+    <section id="stats" class="highlight">
+        <h2>Stats & Records</h2>
+        <p>Retrouve ici mes meilleures performances sur Warzone et d'autres jeux !</p>
+        <a href="https://wzstats.gg/fr" target="_blank">Voir mes stats Warzone</a>
+    </section>
 
-    <script>
-        /* Chargement des particules */
-        particlesJS.load('particles-js', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.json');
-    </script>
+    <section id="boutique" class="highlight">
+        <h2>Boutique / Goodies</h2>
+        <p>Découvre mon merchandising exclusif et soutiens la chaîne !</p>
+    </section>
+
+    <section id="galerie" class="highlight">
+        <h2>Galerie / Best Of</h2>
+        <p>Les meilleurs moments de mes streams, clips et images fun !</p>
+    </section>
+
+    <section id="communaute" class="highlight">
+        <h2>Communauté & Partenariats</h2>
+        <p>Rejoins notre communauté sur Discord et découvre mes partenaires.</p>
+        <a href="https://discord.gg/7wCBb6U5" target="_blank">Rejoindre le Discord</a>
+    </section>
 </body>
 </html>
